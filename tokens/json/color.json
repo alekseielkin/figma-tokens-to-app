@@ -27,8 +27,11 @@
     "primaryDark": {
       "value": "#1d698f"
     },
+    "primaryAccent": {
+      "value": "#26f190"
+    },
     "primaryMain": {
-      "value": "#e15ef6"
+      "value": "#f60833"
     },
     "primaryLight": {
       "value": "#56a4c9"
