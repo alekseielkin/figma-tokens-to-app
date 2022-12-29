@@ -11,7 +11,9 @@ export function cli() {
     }
     fs.readFile(path, 'utf8', (err, data) => {
       if (err) throw err
-      const {FIGMA_APIKEY, FIGMA_ID} = JSON.parse(data)
+
+      const FIGMA_APIKEY = process.env.FIGMA_APIKEY
+      const {FIGMA_ID} = JSON.parse(data)
       const FIGMA_OUTDIR = 'tokens/json'
       if (!FIGMA_APIKEY) {
         throw new Error('\x1b[31m\n\n❌ No Figma API key found!\n\n')
