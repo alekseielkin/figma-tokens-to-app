@@ -35,7 +35,7 @@ const genFile = (name, tokens, outDir) =>
 
 const genTokens = (apikey, id, outDir) => {
   // eslint-disable-next-line no-console
-  console.log('\x1b[40m 👟 🚀  Connecting from mars... \x1b[0m\n')
+  console.log('\x1b[40m 👟 🚀  Connecting from RankiaPro... \x1b[0m\n')
   const FETCH_URL = `https://api.figma.com/v1/files/${id}`
   const FETCH_DATA = {
     method: 'GET',
