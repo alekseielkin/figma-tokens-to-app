@@ -57,12 +57,7 @@ const genTokens = (apikey, id, outDir) => {
       .then(styles => {
         if (styles.status !== 403 && styles.status !== 404) {
 
-          console.log('gen.js');
-          // genFile('testFigFile', styles, outDir)
-
-          // const figmaTree = styles.document.children[0].children
           const figmaTree = styles.document.children[1].children // para fichero de Naiara
-          // console.log(figmaTree[1]);
 
           genFile('color', getColors('Colors', figmaTree), outDir)
           genFile('spacing', getSpacing('Spacing', figmaTree), outDir)

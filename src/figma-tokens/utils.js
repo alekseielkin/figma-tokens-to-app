@@ -1,11 +1,8 @@
 export const filterArtboard = (layerName, stylesArtboard) => {
-  // console.log(layerName, '=>', stylesArtboard.filter(item => item.name === layerName)[0].children );
-
   return stylesArtboard.filter(item => item.name === layerName)[0].children
 }
 
 export const filterElements = (layerName, stylesArtboard) => {
-  // console.log('filterElements --');
   console.log(layerName, '###');
   return filterArtboard(layerName, stylesArtboard).filter(
     item => item.type === 'COMPONENT'
