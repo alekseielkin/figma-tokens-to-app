@@ -3,14 +3,12 @@ export const filterArtboard = (layerName, stylesArtboard) => {
 }
 
 export const filterElements = (layerName, stylesArtboard) => {
-  console.log(layerName, '###');
   return filterArtboard(layerName, stylesArtboard).filter(
     item => item.type === 'COMPONENT'
   )
 }
 
 export const getTokens = (layerName, stylesArtboard, palette, decorator) => {
-  console.log('getTokens');
   const elements = filterElements(layerName, stylesArtboard)
   elements.map(element => decorator(element))
   return palette
